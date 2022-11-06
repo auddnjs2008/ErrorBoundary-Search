@@ -7,6 +7,7 @@ const TextComponent = () => {
     console.log('husky testest');
     console.log('husky testest');
     console.log('husky testest');
+    console.log('husky testest');
     const setError = useSetRecoilState(testRecoil);
     const { data, error } = useQuery('testApi', () => Promise.reject({ message: 'OMG' }), {
         retry: 1,
