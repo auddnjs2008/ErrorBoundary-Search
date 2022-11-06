@@ -6,7 +6,11 @@ export default function Home() {
   return (
     <div>
       <AsyncBoundary
-        rejectedFallback={({ error, reset }) => <div>{error.message} <button onClick={() => reset()}>재시도</button></div>}
+        rejectedFallback={({ error, reset }) => (
+          <div>
+            {error.message} <button onClick={() => reset()}>재시도</button>
+          </div>
+        )}
         pendingFallback={<div>Loading................</div>}
       >
         <TextComponent />
@@ -19,5 +23,5 @@ export default function Home() {
         <TextComponent />
       </AsyncBoundary>
     </div>
-  )
+  );
 }

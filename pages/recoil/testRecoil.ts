@@ -1,8 +1,8 @@
-import { atom } from "recoil";
+import { atom } from 'recoil';
 
 const testRecoil = atom({
-  key: "testError",
-  default: { message: "" },
+  key: 'testError',
+  default: { message: '' },
 });
 
 export default testRecoil;

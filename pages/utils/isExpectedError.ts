@@ -1,5 +1,5 @@
 const isExpectedError = (res: any) => {
-  if (res.message === "OMG") return true;
+  if (res.message === 'OMG') return true;
   return false;
 };
 
