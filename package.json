@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "husky install",
+    "format": "prettier --cache --write .",
+    "eslint": "eslint --cache --fix"
   },
   "dependencies": {
     "next": "13.0.0",
@@ -21,6 +24,8 @@
     "@types/react-dom": "18.0.8",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
     "typescript": "4.8.4"
   }
 }
