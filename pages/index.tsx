@@ -1,11 +1,12 @@
 import AsyncBoundary from './components/AsyncBoundary';
 import ErrorComponent from './components/ErrorComponent';
 import TextComponent from './components/TextComponent';
+import GridContainer from './container/GridContainer';
 
 export default function Home() {
   return (
     <div>
-      <AsyncBoundary
+      {/* <AsyncBoundary
         rejectedFallback={({ error, reset }) => (
           <div>
             {error.message} <button onClick={() => reset()}>재시도</button>
@@ -21,7 +22,8 @@ export default function Home() {
         pendingFallback={<div>Loading2222222...........</div>}
       >
         <TextComponent />
-      </AsyncBoundary>
+      </AsyncBoundary> */}
+      <GridContainer />
     </div>
   );
 }
