@@ -1,5 +1,6 @@
 import AsyncBoundary from './components/AsyncBoundary';
 import ErrorComponent from './components/ErrorComponent';
+import GroupComponent from './components/GroupComponent';
 import TextComponent from './components/TextComponent';
 import GridContainer from './container/GridContainer';
 
@@ -23,7 +24,8 @@ export default function Home() {
       >
         <TextComponent />
       </AsyncBoundary> */}
-      <GridContainer />
+      {/* <GridContainer /> */}
+      <GroupComponent />
     </div>
   );
 }
